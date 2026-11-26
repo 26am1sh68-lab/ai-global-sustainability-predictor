@@ -7,34 +7,6 @@ from pathlib import Path
 
 st.set_page_config(page_title="Global Sustainability Predictor", page_icon="🌍", layout="wide")
 
-st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
-:root { --purple-dark:#4c1d95; --purple:#7c3aed; --lavender:#f3e8ff; --ink:#2e1a47; }
-html, body, [class*="css"] { font-family:'DM Sans',sans-serif; }
-.stApp { background:linear-gradient(180deg,#f7f2ff 0%,#ffffff 48%); color:var(--ink); }
-.block-container { padding-top:2.2rem; padding-bottom:3rem; max-width:1440px; }
-h1 { color:var(--purple-dark)!important; font-weight:800!important; letter-spacing:-1.1px; }
-h2,h3 { color:#6d28d9!important; font-weight:700!important; }
-[data-testid="stSidebar"] { background:linear-gradient(180deg,#3b176f 0%,#6d28d9 100%); }
-[data-testid="stSidebar"] * { color:#fff!important; }
-[data-testid="stSidebar"] [data-baseweb="select"]>div,[data-testid="stSidebar"] [data-baseweb="slider"] { background:rgba(255,255,255,.14); border-radius:10px; }
-[data-testid="stMetric"] { background:linear-gradient(145deg,#fff,#f5efff); border:1px solid #e6d7ff; border-left:4px solid #8b5cf6; border-radius:16px; padding:18px; box-shadow:0 5px 18px rgba(76,29,149,.08); }
-[data-testid="stMetricLabel"] { color:#765a98!important; font-weight:600!important; }
-[data-testid="stMetricValue"] { color:#4c1d95!important; font-weight:800!important; }
-.stTabs [data-baseweb="tab-list"] { gap:8px; border-bottom:1px solid #e9ddfa; }
-.stTabs [data-baseweb="tab"] { background:#f3eaff; border-radius:10px 10px 0 0; color:#5b3488; padding:10px 18px; font-weight:600; }
-.stTabs [aria-selected="true"] { background:#7c3aed!important; color:white!important; }
-.stButton>button,.stDownloadButton>button { background:linear-gradient(135deg,#8b5cf6,#6d28d9); color:white; border:0; border-radius:10px; padding:.55rem 1.1rem; font-weight:700; transition:all .2s ease; }
-.stButton>button:hover,.stDownloadButton>button:hover { background:#5b21b6; color:white; transform:translateY(-1px); box-shadow:0 5px 14px rgba(124,58,237,.22); }
-[data-testid="stDataFrame"],[data-testid="stPlotlyChart"] { background:#fff; border:1px solid #eadfff; border-radius:14px; padding:8px; box-shadow:0 4px 16px rgba(76,29,149,.05); }
-[data-testid="stExpander"] { border:1px solid #e6d7ff; border-radius:12px; background:#fdfbff; }
-hr { border-color:#e9ddfa; }
-small,.stCaption { color:#806b99!important; }
-@media(max-width:768px) { .block-container{padding:1rem 1rem 2rem} h1{font-size:1.8rem!important} [data-testid="stMetric"]{padding:12px} }
-</style>
-""", unsafe_allow_html=True)
-
 ROOT = Path(__file__).parent
 DATA_PATH = ROOT / "sample_indicators.csv"
 
