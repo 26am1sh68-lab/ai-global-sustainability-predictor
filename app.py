@@ -24,11 +24,7 @@ METRICS = {
 st.title("🌍 AI-Based Global Resource & Sustainability Predictor")
 st.caption("Explore resource trends, forecast future indicators, and review an illustrative sustainability index.")
 
-st.warning(
-    "DEMO DATA: This starter project uses generated sample data for demonstration, "
-    "not verified country statistics. Replace it with World Bank / UN / IEA data before "
-    "making real-world claims."
-)
+
 
 with st.sidebar:
     st.header("Prediction settings")
