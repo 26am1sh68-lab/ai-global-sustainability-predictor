@@ -8,7 +8,7 @@ from pathlib import Path
 st.set_page_config(page_title="Global Sustainability Predictor", page_icon="🌍", layout="wide")
 
 ROOT = Path(__file__).parent
-DATA_PATH = ROOT / "data" / "sample_indicators.csv"
+DATA_PATH = ROOT / "sample_indicators.csv"
 
 @st.cache_data
 def load_data():
